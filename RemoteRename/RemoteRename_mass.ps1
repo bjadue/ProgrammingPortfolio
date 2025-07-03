@@ -15,7 +15,7 @@ for($checkNum=0;$checkNum -le [int]($entries.length - 1);$checkNum++){
 	if ($curEntryLength -gt 16){
 	$lessThan16 = $false
 	Write-Host "WARNING: `n"$entries[$checkNum]"is longer than 16 chars. `nThis can cause issues with Azure AD, SQL, etc.." -ForegroundColor Red
-	$16response = Read-Host "Would you like to continue with the process? (Disregard if this is the old name) [y/n]"
+	$16response = Read-Host "Type [n] to cancel this process and close the script, otherwise press enter"
 		if($16response = "n"){
 			exit 1
 		}else{
