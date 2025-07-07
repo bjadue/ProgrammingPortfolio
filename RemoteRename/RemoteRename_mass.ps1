@@ -9,14 +9,14 @@ $targetFile = Read-Host "Input the file location for TXT file"
 $rawText = Get-Content "$targetFile" -Raw
 $entries = $rawText -split ','
 for($checkNum=0;$checkNum -le [int]($entries.length - 1);$checkNum++){
-	$lessThan16 = $true
+	$lessThan15 = $true
 	$curEntryLength = [int]($entries[$checkNum].length)
 	
-	if ($curEntryLength -gt 16){
-	$lessThan16 = $false
-	Write-Host "WARNING: `n"$entries[$checkNum]"is longer than 16 chars. `nThis can cause issues with Azure AD, SQL, etc.." -ForegroundColor Red
-	$16response = Read-Host "Type [n] to cancel this process and close the script, otherwise press enter"
-		if($16response = "n"){
+	if ($curEntryLength -gt 15){
+	$lessThan15 = $false
+	Write-Host "WARNING: `n"$entries[$checkNum]"is longer than 15 chars. `nThis can cause issues with Azure AD, SQL, etc.." -ForegroundColor Red
+	$15response = Read-Host "Type [n] to cancel this process and close the script, otherwise press enter"
+		if($15response = "n"){
 			exit 1
 		}else{
 			Write-Host "Continuing..."
