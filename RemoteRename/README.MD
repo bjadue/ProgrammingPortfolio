@@ -5,6 +5,9 @@ made the thing
 added 16 character limit warnings for both batch version and single version
 plus readme
 
+7/7/25 - v1.2
+dammit its supposed to be 15.
+
 ----------------------------------------------
 this script was written by Brandon Jadue, partially derived from
 https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/rename-computer?view=powershell-7.5
