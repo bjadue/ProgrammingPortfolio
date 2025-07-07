@@ -1,1 +1,2 @@
+THIS IS AN EXAMPLE FOR RemoteRename_mass.ps1 - FOLLOW THIS FORMAT
 oldcomputer,newcomputer,oldcomputer2,newcomputer2,oldcomputer3,newcomputer3
