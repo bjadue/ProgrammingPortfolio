@@ -29,3 +29,4 @@ $renameParams = @{
 }
 #run cmdlet with the pre-defined parameters
 rename-computer @renameParams
+exit 0
