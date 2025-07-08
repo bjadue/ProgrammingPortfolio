@@ -6,7 +6,7 @@ added 16 character limit warnings for both batch version and single version
 plus readme
 
 7/7/25 - v1.2
-dammit its supposed to be 15.
+its supposed to be 15 >:(
 
 ----------------------------------------------
 this script was written by Brandon Jadue, partially derived from
