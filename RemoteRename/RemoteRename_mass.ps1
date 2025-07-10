@@ -30,8 +30,8 @@ $newcompInt = 1
 
 for($comp=0;$comp -le [int]($entries.length/2);$comp++){
 	$renameParams = @{
-	    ComputerName = "$entries["$oldcompInt"]"
-	    NewName = "$entries["$newcompInt"]"
+	    ComputerName = $entries[$oldcompInt]
+	    NewName = $entries[$newcompInt]
 	    DomainCredential = $creds
 	    Force = $true
 	    PassThru = $true
