@@ -2,8 +2,8 @@
 #made by Brandon Jadue, in part from
 #https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/rename-computer?view=powershell-7.5
 
-Write-Output "PLEASE create a txt file containing the computer names separated by commas: `n[oldcomputer,newcomputer,oldcomputer2,newcomputer2...]`n"
-Write-Output "Refer to 'data_example.txt'"
+Write-Host "PLEASE create a txt file containing the computer names separated by commas: `n[oldcomputer,newcomputer,oldcomputer2,newcomputer2...]`n" -ForegroundColor Yellow
+Write-Host "Refer to 'data_example.txt'" 
 
 $targetFile = Read-Host "Input the file location for TXT file"
 $rawText = Get-Content "$targetFile" -Raw
@@ -45,3 +45,4 @@ for($comp=0;$comp -le [int]($entries.length/2);$comp++){
 }
 Write-Output "done. ciao"
 exit 0
+
