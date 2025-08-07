@@ -13,7 +13,6 @@ function Get-Length {
 	}else{
 		$lessThan15 = $true  
 	}
-
 	if ($15response -eq "n" -and $lessThan15 -eq $false){
 		Redo-Length
 	}elseif($15response -ne "n" -and $lessThan15 -eq $false){
@@ -27,11 +26,12 @@ function Get-Length {
 }
 function Redo-Length {
 	$nombre = Read-Host "Please enter new host name of target PC [15>= characters]"
-	Get-Length
+	Get-Length($nombre)
 }
 write-output "Please note that target PC must already be added to the domain.`n"
 $target = Read-Host "Please enter host name of target PC"
 $nombre = Read-Host "Please enter new host name of target PC"
+#entering potential loop
 Get-Length
 $creds = get-credential
 $renameParams = @{
@@ -44,3 +44,4 @@ $renameParams = @{
 }
 #run cmdlet with the pre-defined parameters
 rename-computer @renameParams
+
