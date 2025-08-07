@@ -25,6 +25,8 @@ function Get-Length {
 	}
 }
 function Redo-Length {
+	$nombre = ""
+ 	#reset variable, to prevent any issues in case it does not change
 	$nombre = Read-Host "Please enter new host name of target PC [15>= characters]"
 	Get-Length($nombre)
 }
@@ -44,4 +46,5 @@ $renameParams = @{
 }
 #run cmdlet with the pre-defined parameters
 rename-computer @renameParams
+
 
