@@ -11,6 +11,9 @@ its supposed to be 15 >:(
 8/6/25 - v1.3 -
 made 15-char checks into functions, to allow them to loop back if needed.
 
+8/7/25 - v1.31 -
+adjusted functions to allow for more situational cases. but more if-statements :(
+
 ----------------------------------------------
 this script was written by Brandon Jadue, partially derived from
 https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/rename-computer?view=powershell-7.5
@@ -20,6 +23,7 @@ hello. please note prior to using this script that if the target is in an Azure 
 also, be aware that some programs and services limit the computer name to 15 characters.
 if the new name is above 15 characters, there are warnings. theyre obnoxious. they should be.
 ignore at your own risk.
+
 
 
 
