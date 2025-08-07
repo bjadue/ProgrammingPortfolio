@@ -23,7 +23,3 @@ hello. please note prior to using this script that if the target is in an Azure 
 also, be aware that some programs and services limit the computer name to 15 characters.
 if the new name is above 15 characters, there are warnings. theyre obnoxious. they should be.
 ignore at your own risk.
-
-
-
-
