@@ -22,7 +22,10 @@ function Get-Length {
 	}elseif($lessThan15 -eq $true){
 		Write-Host "Name is good. Continuing..." -ForegroundColor Green
 		return
-	}
+	}else{
+ 		Write-Host "`nFatal error. Aborting." -ForegroundColor red -BackgroundColor black
+ 		exit 1
+  	}
 }
 function Redo-Length {
 	$nombre = ""
@@ -46,5 +49,6 @@ $renameParams = @{
 }
 #run cmdlet with the pre-defined parameters
 rename-computer @renameParams
+
 
 
