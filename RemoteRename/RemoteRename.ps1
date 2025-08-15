@@ -34,7 +34,7 @@ function Redo-Length {
 	Get-Length($nombre)
 }
 write-output "Please note that target PC must already be added to the domain.`n"
-$target = Read-Host "Please enter host name of target PC"
+$target = Read-Host "Please enter current host name of target PC"
 $nombre = Read-Host "Please enter new host name of target PC"
 #entering potential loop
 Get-Length
